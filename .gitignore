@@ -1,4 +1,4 @@
-.undo/
-bundle/
-.netrwhist
-.yankring_history_v2.txt
+.vim/.undo/
+.vim/bundle/
+.vim/.netrwhist
+.vim/.yankring_history_v2.txt
