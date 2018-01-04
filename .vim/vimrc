@@ -1,6 +1,9 @@
-" Vundle plugin manager
 set nocompatible
+
+" Vundle plugin manager
+if isdirectory(expand('~/.vim/bundle/Vundle.vim'))
 filetype off
+
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
@@ -27,6 +30,8 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'posva/vim-vue'
 
 call vundle#end()
+endif
+
 filetype indent plugin on
 
 " Display UTF8
@@ -34,7 +39,11 @@ set encoding=utf-8
 
 " Colors
 syntax on
+if isdirectory(expand('~/.vim/bundle/Vundle.vim'))
 colorscheme mushroom
+else
+colorscheme slate
+endif
 set t_Co=256
 
 " Always show status line
@@ -82,6 +91,8 @@ set colorcolumn=120
 imap jj <Esc>
 
 let mapleader="\<Space>"
+
+if isdirectory(expand('~/.vim/bundle/Vundle.vim'))
 
 "Plugin Configuration
 
@@ -155,3 +166,5 @@ noremap <leader>d :GitGutterLineHighlightsToggle<cr>
 highlight link GitGutterChangeDeleteLine DiffChange
 
 let g:yankring_history_file = '.vim/.yankring_history'
+
+endif
