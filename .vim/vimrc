@@ -39,7 +39,7 @@ set encoding=utf-8
 
 " Colors
 syntax on
-if isdirectory(expand('~/.vim/bundle/Vundle.vim'))
+if filereadable(expand('~/.vim/bundle/mushroom/colors/mushroom.vim'))
 colorscheme mushroom
 else
 colorscheme slate
