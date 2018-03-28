@@ -9,14 +9,12 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 Plugin 'valloric/MatchTagAlways'
-Plugin 'tpope/vim-vividchalk'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'tpope/vim-surround'
 " Plugin 'marijnh/tern_for_vim'
 Plugin 'travitch/hasksyn'
-Plugin 'mtglsk/mushroom'
 Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'bkad/CamelCaseMotion'
 Plugin 'derekwyatt/vim-fswitch'
@@ -28,6 +26,11 @@ Plugin 'vim-scripts/YankRing.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'posva/vim-vue'
+
+" Colorschemes
+Plugin 'gkjgh/cobalt'
+Plugin 'tpope/vim-vividchalk'
+Plugin 'mtglsk/mushroom'
 
 call vundle#end()
 endif
