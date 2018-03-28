@@ -26,6 +26,7 @@ Plugin 'vim-scripts/YankRing.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'posva/vim-vue'
+Plugin 'leafgarland/typescript-vim'
 
 " Colorschemes
 Plugin 'gkjgh/cobalt'
@@ -110,6 +111,8 @@ let g:ycm_filetype_whitelist = { '*': 1 }
 
 " Map <Leader>g to YCM's best guess GoTo function
 noremap <leader>g :YcmCompleter GoTo<CR>
+" `GoTo` is not supported for Typescript so explicitly use `GoToDefinition`
+autocmd FileType typescript noremap <leader>g :YcmCompleter GoToDefinition<CR>
 
 " let YCM to complete after 1 character
 let g:ycm_min_num_of_chars_for_completion = 1
