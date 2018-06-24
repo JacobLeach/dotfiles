@@ -1,0 +1,11 @@
+[user]
+	name = Jacob Leach
+	email = leach.jacob@gmail.com
+	signingkey = 4FD9301AB6E53381
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore.global
+[commit]
+	gpgsign = true
+[gpg]
+	program = gpg
