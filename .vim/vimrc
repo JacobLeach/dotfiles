@@ -15,6 +15,7 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'tpope/vim-surround'
 " Plugin 'marijnh/tern_for_vim'
 Plugin 'neovimhaskell/haskell-vim'
+let g:haskell_indent_disable = 1
 Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'bkad/CamelCaseMotion'
 Plugin 'derekwyatt/vim-fswitch'
@@ -170,6 +171,8 @@ let g:ctrlp_custom_ignore = '\.git\|node_modules'
 
 noremap <leader>d :GitGutterLineHighlightsToggle<cr>
 highlight link GitGutterChangeDeleteLine DiffChange
+" Update gutter on save
+autocmd BufWritePost * GitGutter
 
 let g:yankring_history_file = '.vim/.yankring_history'
 
